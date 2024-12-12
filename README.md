@@ -3,8 +3,8 @@
 
 # OnlineGPT 7.0
 
-![OnlineGPT Logo](![logo](https://github.com/user-attachments/assets/31c712ff-124d-4f9b-94af-0540b51cfc61)
-) <!-- 如果有项目logo，可以放在这里 -->
+![icon](https://github.com/user-attachments/assets/bac65bed-11e0-413f-9cc8-2ab1c78ba8ec)
+
 
 **OnlineGPT 7.0** 是一个强大的在线信息搜索和管理工具，基于 Python 和 PyQt5 构建。它支持多种搜索引擎，提供高级搜索选项，并允许用户轻松复制、保存和管理搜索结果。该项目支持中英文界面，旨在为全球用户提供便捷的搜索体验。
 
@@ -31,11 +31,11 @@
 
 ## 截图
 
-![主界面](https://github.com/yeahhe365/OnlineGPT/blob/main/screenshots/main_interface.png?raw=true)
-*主界面展示*
+![PixPin_2024-12-13_00-23-01](https://github.com/user-attachments/assets/648df9b9-8512-453d-899d-87e486265cb9)
 
-![搜索结果](https://github.com/yeahhe365/OnlineGPT/blob/main/screenshots/search_results.png?raw=true)
-*搜索结果展示*
+
+![PixPin_2024-12-13_00-23-36](https://github.com/user-attachments/assets/ab9bb89e-5463-4965-9ebd-7c50e687b491)
+
 
 ## 安装
 
@@ -108,8 +108,11 @@
 ### 启动应用
 
 运行应用程序后，将看到如下主界面：
+![PixPin_2024-12-13_00-16-18](https://github.com/user-attachments/assets/639c5367-3d2b-4a9e-a408-cd5a3eb6685a)
 
-![主界面](https://github.com/yeahhe365/OnlineGPT/blob/main/screenshots/main_interface.png?raw=true)
+![PixPin_2024-12-13_00-19-01](https://github.com/user-attachments/assets/3ad2590e-c747-437d-9db9-82c83a1604ca)
+
+![PixPin_2024-12-13_00-25-34](https://github.com/user-attachments/assets/57755631-e83d-42c2-9e3c-6b5816a99f29)
 
 ### 主要功能
 
