@@ -3,7 +3,8 @@
 
 # OnlineGPT 7.0
 
-![OnlineGPT Logo](https://github.com/yeahhe365/OnlineGPT/blob/main/logo.png?raw=true) <!-- 如果有项目logo，可以放在这里 -->
+![OnlineGPT Logo](![logo](https://github.com/user-attachments/assets/31c712ff-124d-4f9b-94af-0540b51cfc61)
+) <!-- 如果有项目logo，可以放在这里 -->
 
 **OnlineGPT 7.0** 是一个强大的在线信息搜索和管理工具，基于 Python 和 PyQt5 构建。它支持多种搜索引擎，提供高级搜索选项，并允许用户轻松复制、保存和管理搜索结果。该项目支持中英文界面，旨在为全球用户提供便捷的搜索体验。
 
