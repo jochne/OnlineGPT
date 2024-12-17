@@ -1,7 +1,7 @@
 # translations.py
 translations = {
     'en': {
-        'window_title': "OnlineGPT 7.0",
+        'window_title': "OnlineGPT 7.1",
         'search_settings': "Search Settings",
         'advanced_mode': "Advanced Mode",
         'search_engine': "Search Engine:",
@@ -37,10 +37,10 @@ translations = {
         'interrupt_info_task_interrupted': "Search has been interrupted.",
         'help': "Help",
         'about': "About",
-        'about_title': "About OnlineGPT 7.0",
+        'about_title': "About OnlineGPT 7.1",
         'about_message': (
-            "<h2>About OnlineGPT 7.0</h2>"
-            "<p>OnlineGPT 7.0 is a powerful tool for searching and managing online information.</p>"
+            "<h2>About OnlineGPT 7.1</h2>"
+            "<p>OnlineGPT 7.1 is a powerful tool for searching and managing online information.</p>"
             "<h3>Usage Instructions:</h3>"
             "<ol>"
             "<li><strong>Enter Search Keywords:</strong> Input your search terms in the designated field. For advanced searches, enable Advanced Mode.</li>"
@@ -69,7 +69,7 @@ translations = {
         ),
     },
     'zh': {
-        'window_title': "OnlineGPT 7.0",
+        'window_title': "OnlineGPT 7.1",
         'search_settings': "搜索设置",
         'advanced_mode': "进阶模式",
         'search_engine': "搜索引擎：",
@@ -105,10 +105,10 @@ translations = {
         'interrupt_info_task_interrupted': "搜索已被中断。",
         'help': "帮助",
         'about': "关于",
-        'about_title': "关于 OnlineGPT 7.0",
+        'about_title': "关于 OnlineGPT 7.1",
         'about_message': (
-            "<h2>关于 OnlineGPT 7.0</h2>"
-            "<p>OnlineGPT 7.0 是一个强大的在线信息搜索和管理工具。</p>"
+            "<h2>关于 OnlineGPT 7.1</h2>"
+            "<p>OnlineGPT 7.1 是一个强大的在线信息搜索和管理工具。</p>"
             "<h3>使用说明：</h3>"
             "<ol>"
             "<li><strong>输入搜索关键词：</strong> 在指定的输入框中输入您的搜索词。对于高级搜索，请启用进阶模式。</li>"

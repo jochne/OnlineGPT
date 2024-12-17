@@ -31,7 +31,8 @@ class SearchApp(QWidget):
         """
         label_font = QFont("微软雅黑", 12)
         input_font = QFont("微软雅黑", 12)
-        button_font = QFont("微软雅黑", 12)
+        # 将按钮的字体从12改为10
+        button_font = QFont("微软雅黑", 10)
         status_font = QFont("微软雅黑", 10)
         table_font = QFont("微软雅黑", 10)
         log_font = QFont("Consolas", 10)
@@ -158,7 +159,7 @@ class SearchApp(QWidget):
         # 复制按钮
         self.copy_button = QPushButton(self.language_manager.tr('copy'))
         self.copy_button.setFont(button_font)
-        self.copy_button.setFixedWidth(120)
+        self.copy_button.setFixedWidth(80)  # 原为80，不变
         self.copy_button.setStyleSheet("""
             QPushButton {
                 background-color: #ff9800;
@@ -181,7 +182,7 @@ class SearchApp(QWidget):
         # 清空按钮
         self.clear_button = QPushButton(self.language_manager.tr('clear'))
         self.clear_button.setFont(button_font)
-        self.clear_button.setFixedWidth(80)
+        self.clear_button.setFixedWidth(60)  # 减小为60，不变
         self.clear_button.setStyleSheet("""
             QPushButton {
                 background-color: #9e9e9e;
@@ -228,6 +229,7 @@ class SearchApp(QWidget):
         self.search_input.setFont(input_font)
         self.search_input.setPlaceholderText(self.language_manager.tr('search_placeholder'))
         self.search_input.setToolTip(self.language_manager.tr('search_keywords'))
+        self.search_input.setMinimumWidth(360)  # 缩小为360px（原400px）
 
         # 进阶模式搜索输入框
         self.search_input_advanced = MyTextEdit()
@@ -235,6 +237,7 @@ class SearchApp(QWidget):
         self.search_input_advanced.setPlaceholderText(self.language_manager.tr('search_placeholder_advanced'))
         self.search_input_advanced.setVisible(False)
         self.search_input_advanced.setToolTip(self.language_manager.tr('search_keywords'))
+        self.search_input_advanced.setMinimumWidth(360)  # 同步缩小为360px
 
         # 自定义问题（仅进阶模式）
         self.question_label = QLabel(self.language_manager.tr('custom_question'))
@@ -250,7 +253,7 @@ class SearchApp(QWidget):
         # 搜索按钮
         self.search_button = QPushButton(self.language_manager.tr('search'))
         self.search_button.setFont(button_font)
-        self.search_button.setFixedWidth(120)
+        self.search_button.setFixedWidth(90)  # 原80增加到90
         self.search_button.setStyleSheet("""
             QPushButton {
                 background-color: #4caf50;
@@ -272,7 +275,7 @@ class SearchApp(QWidget):
         # 中断按钮
         self.interrupt_button = QPushButton(self.language_manager.tr('interrupt'))
         self.interrupt_button.setFont(button_font)
-        self.interrupt_button.setFixedWidth(120)
+        self.interrupt_button.setFixedWidth(90)  # 原80增加到90
         self.interrupt_button.setStyleSheet("""
             QPushButton {
                 background-color: #f44336;
@@ -302,7 +305,7 @@ class SearchApp(QWidget):
         # 保存按钮
         self.save_button = QPushButton(self.language_manager.tr('save_results'))
         self.save_button.setFont(button_font)
-        self.save_button.setFixedWidth(120)
+        self.save_button.setFixedWidth(90)  # 原80增加到90
         self.save_button.setStyleSheet("""
             QPushButton {
                 background-color: #2196F3;
@@ -325,7 +328,7 @@ class SearchApp(QWidget):
         # 打开结果按钮
         self.open_button = QPushButton(self.language_manager.tr('open_results'))
         self.open_button.setFont(button_font)
-        self.open_button.setFixedWidth(120)
+        self.open_button.setFixedWidth(90)  # 原80增加到90
         self.open_button.setStyleSheet("""
             QPushButton {
                 background-color: #9c27b0;
@@ -352,10 +355,11 @@ class SearchApp(QWidget):
         self.button_layout = QHBoxLayout()
         self.button_layout.addWidget(self.search_button)
         self.button_layout.addWidget(self.interrupt_button)
-        self.button_layout.addStretch()
+        self.button_layout.addStretch() 
         self.button_layout.addWidget(self.save_button)
         self.button_layout.addWidget(self.open_button)
 
+        self.input_button_layout.addStretch(1)
         self.input_button_layout.addLayout(self.button_layout)
 
         # 将搜索关键词和问题添加到布局
@@ -978,7 +982,6 @@ class SearchApp(QWidget):
         if self.thread and self.thread.isRunning():
             self.worker.stop()
             self.thread.quit()
-            self.thread.wait()
         event.accept()
 
 
